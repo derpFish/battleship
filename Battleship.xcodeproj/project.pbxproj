@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		454FA71A16DC4BC70060EF0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71916DC4BC70060EF0C /* UIKit.framework */; };
+		454FA71C16DC4BC70060EF0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71B16DC4BC70060EF0C /* Foundation.framework */; };
+		454FA71E16DC4BC70060EF0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71D16DC4BC70060EF0C /* CoreGraphics.framework */; };
+		454FA72416DC4BC70060EF0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 454FA72216DC4BC70060EF0C /* InfoPlist.strings */; };
+		454FA72616DC4BC70060EF0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA72516DC4BC70060EF0C /* main.m */; };
+		454FA72A16DC4BC70060EF0C /* MRDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA72916DC4BC70060EF0C /* MRDAppDelegate.m */; };
+		454FA72C16DC4BC70060EF0C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 454FA72B16DC4BC70060EF0C /* Default.png */; };
+		454FA72E16DC4BC70060EF0C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454FA72D16DC4BC70060EF0C /* Default@2x.png */; };
+		454FA73016DC4BC70060EF0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454FA72F16DC4BC70060EF0C /* Default-568h@2x.png */; };
+		454FA73316DC4BC70060EF0C /* MRDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA73216DC4BC70060EF0C /* MRDViewController.m */; };
+		454FA73616DC4BC70060EF0C /* MRDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454FA73416DC4BC70060EF0C /* MRDViewController_iPhone.xib */; };
+		454FA73916DC4BC70060EF0C /* MRDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454FA73716DC4BC70060EF0C /* MRDViewController_iPad.xib */; };
+		454FA74116DC4BC70060EF0C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA74016DC4BC70060EF0C /* SenTestingKit.framework */; };
+		454FA74216DC4BC70060EF0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71916DC4BC70060EF0C /* UIKit.framework */; };
+		454FA74316DC4BC70060EF0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71B16DC4BC70060EF0C /* Foundation.framework */; };
+		454FA74B16DC4BC80060EF0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 454FA74916DC4BC80060EF0C /* InfoPlist.strings */; };
+		454FA74E16DC4BC80060EF0C /* BattleshipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA74D16DC4BC80060EF0C /* BattleshipTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		454FA74416DC4BC80060EF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 454FA70E16DC4BC70060EF0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454FA71516DC4BC70060EF0C;
+			remoteInfo = Battleship;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		454FA71616DC4BC70060EF0C /* Battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454FA71916DC4BC70060EF0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		454FA71B16DC4BC70060EF0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		454FA71D16DC4BC70060EF0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		454FA72116DC4BC70060EF0C /* Battleship-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Battleship-Info.plist"; sourceTree = "<group>"; };
+		454FA72316DC4BC70060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		454FA72516DC4BC70060EF0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		454FA72716DC4BC70060EF0C /* Battleship-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Battleship-Prefix.pch"; sourceTree = "<group>"; };
+		454FA72816DC4BC70060EF0C /* MRDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDAppDelegate.h; sourceTree = "<group>"; };
+		454FA72916DC4BC70060EF0C /* MRDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRDAppDelegate.m; sourceTree = "<group>"; };
+		454FA72B16DC4BC70060EF0C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		454FA72D16DC4BC70060EF0C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		454FA72F16DC4BC70060EF0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		454FA73116DC4BC70060EF0C /* MRDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDViewController.h; sourceTree = "<group>"; };
+		454FA73216DC4BC70060EF0C /* MRDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRDViewController.m; sourceTree = "<group>"; };
+		454FA73516DC4BC70060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MRDViewController_iPhone.xib; sourceTree = "<group>"; };
+		454FA73816DC4BC70060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MRDViewController_iPad.xib; sourceTree = "<group>"; };
+		454FA73F16DC4BC70060EF0C /* BattleshipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleshipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		454FA74016DC4BC70060EF0C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		454FA74816DC4BC80060EF0C /* BattleshipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BattleshipTests-Info.plist"; sourceTree = "<group>"; };
+		454FA74A16DC4BC80060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		454FA74C16DC4BC80060EF0C /* BattleshipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BattleshipTests.h; sourceTree = "<group>"; };
+		454FA74D16DC4BC80060EF0C /* BattleshipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BattleshipTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		454FA71316DC4BC70060EF0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454FA71A16DC4BC70060EF0C /* UIKit.framework in Frameworks */,
+				454FA71C16DC4BC70060EF0C /* Foundation.framework in Frameworks */,
+				454FA71E16DC4BC70060EF0C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454FA73B16DC4BC70060EF0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454FA74116DC4BC70060EF0C /* SenTestingKit.framework in Frameworks */,
+				454FA74216DC4BC70060EF0C /* UIKit.framework in Frameworks */,
+				454FA74316DC4BC70060EF0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		454FA70D16DC4BC70060EF0C = {
+			isa = PBXGroup;
+			children = (
+				454FA71F16DC4BC70060EF0C /* Battleship */,
+				454FA74616DC4BC80060EF0C /* BattleshipTests */,
+				454FA71816DC4BC70060EF0C /* Frameworks */,
+				454FA71716DC4BC70060EF0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		454FA71716DC4BC70060EF0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				454FA71616DC4BC70060EF0C /* Battleship.app */,
+				454FA73F16DC4BC70060EF0C /* BattleshipTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		454FA71816DC4BC70060EF0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				454FA71916DC4BC70060EF0C /* UIKit.framework */,
+				454FA71B16DC4BC70060EF0C /* Foundation.framework */,
+				454FA71D16DC4BC70060EF0C /* CoreGraphics.framework */,
+				454FA74016DC4BC70060EF0C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		454FA71F16DC4BC70060EF0C /* Battleship */ = {
+			isa = PBXGroup;
+			children = (
+				454FA72816DC4BC70060EF0C /* MRDAppDelegate.h */,
+				454FA72916DC4BC70060EF0C /* MRDAppDelegate.m */,
+				454FA73116DC4BC70060EF0C /* MRDViewController.h */,
+				454FA73216DC4BC70060EF0C /* MRDViewController.m */,
+				454FA73416DC4BC70060EF0C /* MRDViewController_iPhone.xib */,
+				454FA73716DC4BC70060EF0C /* MRDViewController_iPad.xib */,
+				454FA72016DC4BC70060EF0C /* Supporting Files */,
+			);
+			path = Battleship;
+			sourceTree = "<group>";
+		};
+		454FA72016DC4BC70060EF0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				454FA72116DC4BC70060EF0C /* Battleship-Info.plist */,
+				454FA72216DC4BC70060EF0C /* InfoPlist.strings */,
+				454FA72516DC4BC70060EF0C /* main.m */,
+				454FA72716DC4BC70060EF0C /* Battleship-Prefix.pch */,
+				454FA72B16DC4BC70060EF0C /* Default.png */,
+				454FA72D16DC4BC70060EF0C /* Default@2x.png */,
+				454FA72F16DC4BC70060EF0C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		454FA74616DC4BC80060EF0C /* BattleshipTests */ = {
+			isa = PBXGroup;
+			children = (
+				454FA74C16DC4BC80060EF0C /* BattleshipTests.h */,
+				454FA74D16DC4BC80060EF0C /* BattleshipTests.m */,
+				454FA74716DC4BC80060EF0C /* Supporting Files */,
+			);
+			path = BattleshipTests;
+			sourceTree = "<group>";
+		};
+		454FA74716DC4BC80060EF0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				454FA74816DC4BC80060EF0C /* BattleshipTests-Info.plist */,
+				454FA74916DC4BC80060EF0C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		454FA71516DC4BC70060EF0C /* Battleship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454FA75116DC4BC80060EF0C /* Build configuration list for PBXNativeTarget "Battleship" */;
+			buildPhases = (
+				454FA71216DC4BC70060EF0C /* Sources */,
+				454FA71316DC4BC70060EF0C /* Frameworks */,
+				454FA71416DC4BC70060EF0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Battleship;
+			productName = Battleship;
+			productReference = 454FA71616DC4BC70060EF0C /* Battleship.app */;
+			productType = "com.apple.product-type.application";
+		};
+		454FA73E16DC4BC70060EF0C /* BattleshipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454FA75416DC4BC80060EF0C /* Build configuration list for PBXNativeTarget "BattleshipTests" */;
+			buildPhases = (
+				454FA73A16DC4BC70060EF0C /* Sources */,
+				454FA73B16DC4BC70060EF0C /* Frameworks */,
+				454FA73C16DC4BC70060EF0C /* Resources */,
+				454FA73D16DC4BC70060EF0C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				454FA74516DC4BC80060EF0C /* PBXTargetDependency */,
+			);
+			name = BattleshipTests;
+			productName = BattleshipTests;
+			productReference = 454FA73F16DC4BC70060EF0C /* BattleshipTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		454FA70E16DC4BC70060EF0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MRD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Dorsey";
+			};
+			buildConfigurationList = 454FA71116DC4BC70060EF0C /* Build configuration list for PBXProject "Battleship" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 454FA70D16DC4BC70060EF0C;
+			productRefGroup = 454FA71716DC4BC70060EF0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				454FA71516DC4BC70060EF0C /* Battleship */,
+				454FA73E16DC4BC70060EF0C /* BattleshipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		454FA71416DC4BC70060EF0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454FA72416DC4BC70060EF0C /* InfoPlist.strings in Resources */,
+				454FA72C16DC4BC70060EF0C /* Default.png in Resources */,
+				454FA72E16DC4BC70060EF0C /* Default@2x.png in Resources */,
+				454FA73016DC4BC70060EF0C /* Default-568h@2x.png in Resources */,
+				454FA73616DC4BC70060EF0C /* MRDViewController_iPhone.xib in Resources */,
+				454FA73916DC4BC70060EF0C /* MRDViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454FA73C16DC4BC70060EF0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454FA74B16DC4BC80060EF0C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		454FA73D16DC4BC70060EF0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		454FA71216DC4BC70060EF0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454FA72616DC4BC70060EF0C /* main.m in Sources */,
+				454FA72A16DC4BC70060EF0C /* MRDAppDelegate.m in Sources */,
+				454FA73316DC4BC70060EF0C /* MRDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454FA73A16DC4BC70060EF0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454FA74E16DC4BC80060EF0C /* BattleshipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		454FA74516DC4BC80060EF0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454FA71516DC4BC70060EF0C /* Battleship */;
+			targetProxy = 454FA74416DC4BC80060EF0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		454FA72216DC4BC70060EF0C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454FA72316DC4BC70060EF0C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		454FA73416DC4BC70060EF0C /* MRDViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454FA73516DC4BC70060EF0C /* en */,
+			);
+			name = MRDViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		454FA73716DC4BC70060EF0C /* MRDViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454FA73816DC4BC70060EF0C /* en */,
+			);
+			name = MRDViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		454FA74916DC4BC80060EF0C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454FA74A16DC4BC80060EF0C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		454FA74F16DC4BC80060EF0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		454FA75016DC4BC80060EF0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		454FA75216DC4BC80060EF0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Battleship/Battleship-Prefix.pch";
+				INFOPLIST_FILE = "Battleship/Battleship-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		454FA75316DC4BC80060EF0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Battleship/Battleship-Prefix.pch";
+				INFOPLIST_FILE = "Battleship/Battleship-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		454FA75516DC4BC80060EF0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Battleship.app/Battleship";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Battleship/Battleship-Prefix.pch";
+				INFOPLIST_FILE = "BattleshipTests/BattleshipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		454FA75616DC4BC80060EF0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Battleship.app/Battleship";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Battleship/Battleship-Prefix.pch";
+				INFOPLIST_FILE = "BattleshipTests/BattleshipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		454FA71116DC4BC70060EF0C /* Build configuration list for PBXProject "Battleship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454FA74F16DC4BC80060EF0C /* Debug */,
+				454FA75016DC4BC80060EF0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454FA75116DC4BC80060EF0C /* Build configuration list for PBXNativeTarget "Battleship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454FA75216DC4BC80060EF0C /* Debug */,
+				454FA75316DC4BC80060EF0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		454FA75416DC4BC80060EF0C /* Build configuration list for PBXNativeTarget "BattleshipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454FA75516DC4BC80060EF0C /* Debug */,
+				454FA75616DC4BC80060EF0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 454FA70E16DC4BC70060EF0C /* Project object */;
+}
