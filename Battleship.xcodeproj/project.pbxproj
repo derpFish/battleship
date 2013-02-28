@@ -17,13 +17,14 @@
 		454FA72E16DC4BC70060EF0C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454FA72D16DC4BC70060EF0C /* Default@2x.png */; };
 		454FA73016DC4BC70060EF0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454FA72F16DC4BC70060EF0C /* Default-568h@2x.png */; };
 		454FA73316DC4BC70060EF0C /* MRDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA73216DC4BC70060EF0C /* MRDViewController.m */; };
-		454FA73616DC4BC70060EF0C /* MRDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454FA73416DC4BC70060EF0C /* MRDViewController_iPhone.xib */; };
-		454FA73916DC4BC70060EF0C /* MRDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454FA73716DC4BC70060EF0C /* MRDViewController_iPad.xib */; };
 		454FA74116DC4BC70060EF0C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA74016DC4BC70060EF0C /* SenTestingKit.framework */; };
 		454FA74216DC4BC70060EF0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71916DC4BC70060EF0C /* UIKit.framework */; };
 		454FA74316DC4BC70060EF0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454FA71B16DC4BC70060EF0C /* Foundation.framework */; };
 		454FA74B16DC4BC80060EF0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 454FA74916DC4BC80060EF0C /* InfoPlist.strings */; };
 		454FA74E16DC4BC80060EF0C /* BattleshipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA74D16DC4BC80060EF0C /* BattleshipTests.m */; };
+		454FA75C16DC552C0060EF0C /* MRDGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA75B16DC552C0060EF0C /* MRDGridView.m */; };
+		454FA75F16DC55390060EF0C /* MRDShipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FA75E16DC55390060EF0C /* MRDShipView.m */; };
+		454FA76116DC66960060EF0C /* MRDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454FA76016DC66960060EF0C /* MRDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		452EDFE616DF07D30072F6B6 /* MRDGridViewTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDGridViewTypes.h; sourceTree = "<group>"; };
+		452EDFE716DF0DEC0072F6B6 /* MRDShipViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDShipViewDelegate.h; sourceTree = "<group>"; };
 		454FA71616DC4BC70060EF0C /* Battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454FA71916DC4BC70060EF0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		454FA71B16DC4BC70060EF0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,14 +55,18 @@
 		454FA72F16DC4BC70060EF0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		454FA73116DC4BC70060EF0C /* MRDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDViewController.h; sourceTree = "<group>"; };
 		454FA73216DC4BC70060EF0C /* MRDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRDViewController.m; sourceTree = "<group>"; };
-		454FA73516DC4BC70060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MRDViewController_iPhone.xib; sourceTree = "<group>"; };
-		454FA73816DC4BC70060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MRDViewController_iPad.xib; sourceTree = "<group>"; };
 		454FA73F16DC4BC70060EF0C /* BattleshipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleshipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		454FA74016DC4BC70060EF0C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		454FA74816DC4BC80060EF0C /* BattleshipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BattleshipTests-Info.plist"; sourceTree = "<group>"; };
 		454FA74A16DC4BC80060EF0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		454FA74C16DC4BC80060EF0C /* BattleshipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BattleshipTests.h; sourceTree = "<group>"; };
 		454FA74D16DC4BC80060EF0C /* BattleshipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BattleshipTests.m; sourceTree = "<group>"; };
+		454FA75716DC54510060EF0C /* MRDGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDGridViewDelegate.h; sourceTree = "<group>"; };
+		454FA75A16DC552C0060EF0C /* MRDGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDGridView.h; sourceTree = "<group>"; };
+		454FA75B16DC552C0060EF0C /* MRDGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDGridView.m; sourceTree = "<group>"; };
+		454FA75D16DC55390060EF0C /* MRDShipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDShipView.h; sourceTree = "<group>"; };
+		454FA75E16DC55390060EF0C /* MRDShipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDShipView.m; sourceTree = "<group>"; };
+		454FA76016DC66960060EF0C /* MRDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +128,16 @@
 			children = (
 				454FA72816DC4BC70060EF0C /* MRDAppDelegate.h */,
 				454FA72916DC4BC70060EF0C /* MRDAppDelegate.m */,
+				454FA75A16DC552C0060EF0C /* MRDGridView.h */,
+				454FA75B16DC552C0060EF0C /* MRDGridView.m */,
+				454FA75716DC54510060EF0C /* MRDGridViewDelegate.h */,
+				452EDFE616DF07D30072F6B6 /* MRDGridViewTypes.h */,
+				454FA75D16DC55390060EF0C /* MRDShipView.h */,
+				454FA75E16DC55390060EF0C /* MRDShipView.m */,
+				452EDFE716DF0DEC0072F6B6 /* MRDShipViewDelegate.h */,
 				454FA73116DC4BC70060EF0C /* MRDViewController.h */,
 				454FA73216DC4BC70060EF0C /* MRDViewController.m */,
-				454FA73416DC4BC70060EF0C /* MRDViewController_iPhone.xib */,
-				454FA73716DC4BC70060EF0C /* MRDViewController_iPad.xib */,
+				454FA76016DC66960060EF0C /* MRDViewController.xib */,
 				454FA72016DC4BC70060EF0C /* Supporting Files */,
 			);
 			path = Battleship;
@@ -239,8 +252,7 @@
 				454FA72C16DC4BC70060EF0C /* Default.png in Resources */,
 				454FA72E16DC4BC70060EF0C /* Default@2x.png in Resources */,
 				454FA73016DC4BC70060EF0C /* Default-568h@2x.png in Resources */,
-				454FA73616DC4BC70060EF0C /* MRDViewController_iPhone.xib in Resources */,
-				454FA73916DC4BC70060EF0C /* MRDViewController_iPad.xib in Resources */,
+				454FA76116DC66960060EF0C /* MRDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +290,8 @@
 				454FA72616DC4BC70060EF0C /* main.m in Sources */,
 				454FA72A16DC4BC70060EF0C /* MRDAppDelegate.m in Sources */,
 				454FA73316DC4BC70060EF0C /* MRDViewController.m in Sources */,
+				454FA75C16DC552C0060EF0C /* MRDGridView.m in Sources */,
+				454FA75F16DC55390060EF0C /* MRDShipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,22 +320,6 @@
 				454FA72316DC4BC70060EF0C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		454FA73416DC4BC70060EF0C /* MRDViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				454FA73516DC4BC70060EF0C /* en */,
-			);
-			name = MRDViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		454FA73716DC4BC70060EF0C /* MRDViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				454FA73816DC4BC70060EF0C /* en */,
-			);
-			name = MRDViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		454FA74916DC4BC80060EF0C /* InfoPlist.strings */ = {
@@ -468,6 +466,7 @@
 				454FA75316DC4BC80060EF0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		454FA75416DC4BC80060EF0C /* Build configuration list for PBXNativeTarget "BattleshipTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +475,7 @@
 				454FA75616DC4BC80060EF0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

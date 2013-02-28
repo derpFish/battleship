@@ -1,5 +1,5 @@
 //
-//  MRDViewController.h
+//  MRDShipView.h
 //  Battleship
 //
 //  Created by Michael Dorsey on 2/25/13.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MRDGridViewDelegate.h"
 #import "MRDShipViewDelegate.h"
 
-@interface MRDViewController : UIViewController <MRDGridViewDelegate, MRDShipViewDelegate>
+@interface MRDShipView : UIView
+
+@property (nonatomic, weak) id<MRDShipViewDelegate> delegate;
 
 @end
